@@ -1,0 +1,375 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        
+        
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>jquery.matchHeight Tests</title>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script type="text/javascript" src="javascript/match-height.js"></script>
+        
+		<style>
+
+* { 
+    padding: 0; 
+    margin: 0; 
+}
+
+body { 
+    background: #033649;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    color: #fff;
+    border: 9px solid #fff;
+}
+
+h1 {
+    color: #fff;
+    display: block;
+    margin: 0 0 1em 0;
+    font-weight: normal;
+    font-size: 30px;
+}
+
+h2 {
+    color: #ddd;
+    display: block;
+    margin: 0 0 1em 0;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+p, ul li {
+    margin: 0 0 1em 0;
+    color: #bebebe;
+    font-size: 12px;
+}
+
+ul {
+    list-style: square;
+}
+
+.nav {
+    margin: 0 0 2em 0;
+    font-size: 16px;
+}
+
+a, a:link, a:visited, a:active, a:hover {
+    color: #ccc;
+    text-decoration: none;
+    border-bottom: 1px solid #555;
+    padding: 0 0 2px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.nav-sep {
+    padding: 0 5px;
+}
+
+.controls {
+    overflow: hidden;
+    margin: 60px 0 30px 0;
+}
+
+.controls .checkbox {
+    float: left;
+    font-size: 13px;
+    color: #ddd;
+    margin: 5px 20px 5px 0;
+}
+
+.test-remove {
+    margin: -8px 20px 0 20px;
+    line-height: 1;
+    border: 0;
+    background: #ddd;
+    color: #555;
+    padding: 7px 10px;
+}
+
+/* test items */
+
+.items-container,
+.data-test-items {
+    overflow: hidden;
+    margin: 0 -1%;
+}
+
+.item {
+    display: block;
+    float: left;
+    width: 23%;
+    background: #00A0B0;
+}
+
+.item p {
+    color: rgba(255,255,255,0.6);
+    line-height: 1.5;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.item h2,
+.item h3,
+.item h4 {
+    color: #fff;
+    margin: 0 0 1em 0;
+    font-weight: normal;
+}
+
+.item h2 {
+    font-size: 24px;
+}
+
+.item h3 {
+    font-size: 20px;
+}
+
+.item h4 {
+    font-size: 16px;
+}
+
+.item-0 { background: #00A0B0; border-color: #008795 !important; }
+.item-1 { background: #6A4A3C; border-color: #52392e !important; }
+.item-2 { background: #CC333F; border-color: #ad2b35 !important; }
+.item-3 { background: #EB6841; border-color: #ca5938 !important; }
+.item-4 { background: #EDC951; border-color: #d8b74a !important; }
+.item-5 { background: #00A0B0; border-color: #008795 !important; }
+.item-6 { background: #6A4A3C; border-color: #52392e !important; }
+.item-7 { background: #CC333F; border-color: #ad2b35 !important; }
+.item-8 { background: #EB6841; border-color: #ca5938 !important; }
+.item-9 { background: #EDC951; border-color: #d8b74a !important; }
+.item-10 { background: #00A0B0; border-color: #008795 !important; }
+.item-11 { background: #6A4A3C; border-color: #52392e !important; }
+
+.item img {
+    display: block;
+    max-width: 100%;
+}
+
+.item p:last-child {
+    margin-bottom: 0;
+}
+
+.items-container.big-items .item {
+    width: 48%;
+}
+
+/* test margins */
+
+.test-margin .item {
+    margin: 1%;
+}
+
+/* test a mix of padding amounts */
+
+.test-padding .item {
+    padding: 20px;
+}
+
+.test-padding .item-5 {
+    padding: 30px;
+}
+
+.test-padding .item-6 {
+    padding: 40px;
+}
+
+.test-padding .item-7 {
+    padding: 50px;
+}
+
+/* test a mix of border widths */
+
+.test-border .item {
+    border: 1px solid #eee;
+}
+
+.test-border .item-2 {
+    border: 3px solid #eee;
+}
+
+.test-border .item-3 {
+    border: 6px solid #eee;
+}
+
+.test-border .item-5 {
+    border: 8px solid #eee;
+}
+
+.test-border .item-8 {
+    border: 10px solid #eee;
+}
+
+/* test border-box */
+
+.test-border-box .item {
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+}
+
+/* test fixed height items */
+
+.items-container.fixed-items .item-0 {
+    height: 150px;
+}
+
+.items-container.fixed-items .item-1 {
+    height: 190px;
+}
+
+.items-container.fixed-items .item-2 {
+    height: 230px;
+}
+
+.items-container.fixed-items .item-3 {
+    height: 250px;
+}
+
+/* test responsive */
+
+@media only screen and (max-width: 1024px) {
+    .item,
+    .items-container.big-items .item {
+        width: 48%;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .test-margin .item,
+    .test-margin .items-container.big-items .item {
+        width: 99%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+		</style>
+    </head>
+    <body class="test-match-height test-rows test-responsive test-border-box test-margin test-padding">
+        <div class="container">
+            <div class="items-container">
+                <div class="item item-0">
+                    <h2>Lorem ipsum</h2>
+                    <p>Phasellus ut nibh fermentum, vulputate urna vel, semper diam.</p>
+                    <p>Aenean semper felis ipsum, vulputate consequat dui elementum vel.</p>
+                </div>
+                <div class="item item-1">
+                    <h3>Lorem ipsum dolor</h3>
+                    <p>Phasellus ut nibh fermentum, vulputate urna vel, semper diam. Nunc sollicitudin felis ut pellentesque fermentum. In erat mi, pulvinar sit amet tincidunt vitae, gravida id felis. Phasellus hendrerit erat sed porta imperdiet. Vivamus viverra ipsum tortor, et congue mauris porttitor ut.</p>
+                </div>
+                <div class="item item-2">
+                    <h4>Lorem ipsum dolor sit amet.</h4>
+                    <p>Aenean semper felis ipsum, vulputate consequat dui elementum vel. Nullam odio eros, sagittis vitae lectus id, pretium viverra lectus. Etiam auctor dolor non dui ultricies pulvinar.</p>
+                </div>
+
+                <div class="item item-3">
+                    <h3>Lorem ipsum dolor</h3>
+                    <p>Aenean semper.</p>
+                </div>
+                <div class="item item-4">
+                    <h3>Lorem ipsum dolor</h3>
+                    <p>Phasellus ut nibh fermentum, vulputate urna vel, semper diam. Nunc sollicitudin felis ut pellentesque fermentum. In erat mi, pulvinar sit amet tincidunt vitae, gravida id felis.</p>
+                </div>
+                <div class="item item-5">
+                    <h3>Lorem ipsum dolor</h3>
+                    <p>Aenean semper felis ipsum, vulputate consequat dui elementum vel.</p>
+                </div>
+                <div class="item item-6">
+                    <h3>Lorem ipsum dolor</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                </div>
+                <div class="item item-7">
+                    <h3>Lorem ipsum dolor</h3>
+                    <p>Phasellus ut nibh fermentum, vulputate urna vel, semper diam.</p>
+                </div>
+
+                <div class="item item-8">
+                    <img src="http://placehold.it/800x150/fafafa/666" alt="a test image">
+                </div>
+                <div class="item item-9">
+                    <img src="http://placehold.it/800x180/fafafa/666" alt="a test image">
+                </div>
+                <div class="item item-10">
+                    <img src="http://placehold.it/800x200/fafafa/666" alt="a test image">
+                </div>
+                <div class="item item-11">
+                    <img src="http://placehold.it/800x220/fafafa/666" alt="a test image">
+                </div>
+            </div>
+
+            <div class="items-container big-items">
+                <div class="item item-0">
+                    <h3>Lorem ipsum dolor</h3>
+                    <p>Phasellus ut nibh fermentum, vulputate urna vel, semper diam.</p>
+                    <p>Aenean semper felis ipsum, vulputate consequat dui elementum vel.</p>
+                    <p>Phasellus ut nibh fermentum, vulputate urna vel, semper diam. Nunc sollicitudin felis ut pellentesque fermentum. In erat mi, pulvinar sit amet tincidunt vitae, gravida id felis. Phasellus hendrerit erat sed porta imperdiet. Vivamus viverra ipsum tortor, et congue mauris porttitor ut.</p>
+                    <p>Phasellus ut nibh fermentum, vulputate urna vel, semper diam. Nunc sollicitudin felis ut pellentesque fermentum. In erat mi, pulvinar sit amet tincidunt vitae, gravida id felis.</p>
+                </div>
+                <div class="item item-1">
+                    <div class="items-container">
+                        <div class="item item-2">
+                            <p>Aenean</p>
+                        </div>
+                        <div class="item item-3">
+                            <p>Lorem</p>
+                        </div>
+                        <div class="item item-4">
+                            <p>Phasellus</p>
+                        </div>
+                        <div class="item item-5">
+                            <p>Aenean semper felis ipsum, vulputate consequat dui elementum vel.</p>
+                        </div>
+                        <div class="item item-6">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        </div>
+                        <div class="item item-7">
+                            <p>Phasellus ut nibh fermentum, vulputate urna vel, semper diam.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="data-test-items">
+                <div class="item item-0" data-match-height="items-a">
+                    <h3>data-match-height="items-a"</h3>
+                    <p>Phasellus ut nibh fermentum, vulputate urna vel, semper diam. Nunc sollicitudin felis ut pellentesque fermentum. In erat mi, pulvinar sit amet tincidunt vitae, gravida id felis. Phasellus hendrerit erat sed porta imperdiet. Vivamus viverra ipsum tortor, et congue mauris porttitor ut.</p>
+                </div>
+                <div class="item item-1" data-match-height="items-a">
+                    <h3>data-match-height="items-a"</h3>
+                    <p>Phasellus ut nibh fermentum, vulputate urna vel, semper diam. Nunc sollicitudin felis ut pellentesque fermentum. In erat mi, pulvinar sit amet tincidunt vitae, gravida id felis.</p>
+                </div>
+                <div class="item item-2" data-mh="items-b">
+                    <h3>data-mh="items-b"</h3>
+                    <p>In erat mi, pulvinar sit amet tincidunt vitae, gravida id felis.</p>
+                </div>
+                <div class="item item-3" data-mh="items-b">
+                    <h3>data-mh="items-b"</h3>
+                    <p>Nunc sollicitudin felis ut pellentesque fermentum. In erat mi, pulvinar sit amet tincidunt vitae, gravida id felis.</p>
+                </div>
+            </div>
+
+            <div class="items-container fixed-items">
+                <div class="item item-0">
+                    <p>Fixed height</p>
+                </div>
+                <div class="item item-1">
+                    <p>Fixed height</p>
+                </div>
+                <div class="item item-2">
+                    <p>Fixed height</p>
+                </div>
+                <div class="item item-3">
+                    <p>Fixed height</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

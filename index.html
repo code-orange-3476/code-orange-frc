@@ -1,0 +1,195 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<title>Code Orange</title>
+	<meta http-equiv="x-ua-compatible" content="IE=edge" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-touch-fullscreen" content="yes">
+	<link rel='icon' type='image/png' href='images/favicon.png'>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script type="text/javascript" src="gallery/slider/slider.js" ></script>
+	<script type="text/javascript" src="javascript/jquery.js"></script>
+	<script type="text/javascript" src="javascript/nicescroll.js"></script>
+	<script type="text/javascript" src="javascript/snap.min.js"></script>
+	<script type="text/javascript" src="javascript/match-height.js"></script>
+</head>
+<body >
+	<!--Actual menu bar(on tablet/phone only) and menu drawer code. If you need to modify the menu itself (add/remove choices), modify the 'menu.js' file under 'javascript' folder.-->
+	<script type="text/javascript" src="javascript/menu-drawer-bar.js"></script>
+	<!---->
+	<div id="content" class="content-pane">
+		<!--Actual header(logo and avatar) and nav bar(on laptop/desktop only). If you need to modify the menu itself (add/remove choices), modify the 'menu.js' file under 'javascript' folder.-->
+		<script type="text/javascript" src="javascript/header-nav-bar.js"></script>
+		<!---->
+		<div class="wrapper">
+			<div style="height:5px">
+			</div>
+			<!---------------------------Content below is unique for every page------------------------------>
+			
+			<!--CSS Styling for this page-->
+			<style>
+			
+			.section-third img{
+				width:90%;
+				margin:5%;
+			}
+			#twitter .card{
+				min-height:400px;
+			}
+			
+			
+			@media only screen and (min-width: 1224px) {
+				
+			#twitter .card{
+				padding:0 15px 0 15px;
+			}
+			#about .card{
+				padding: 40px;
+				font-size:1.1em;
+			}
+			#twitter {
+				
+				width:45%;
+				height:100%;
+			}
+			#about {
+				width:55%;
+				height:100%;
+			}
+			#twitter-feed{
+				height:474px;
+				ovverflow:hidden;
+			}
+			#sponsors {
+				width:33.33%;
+			}
+			}
+			@media only screen and (max-width: 1223px) {
+			#twitter .card{
+				padding:0 10px 0 10px;
+			}
+			#about .card{
+				padding: 30px;
+				font-size:1.1em;
+			}
+			#twitter {
+				width:45%;
+			}
+			#about {
+				width:55%;
+			}
+			#sponsors {
+				width:33.33%;
+			}
+			}
+			@media only screen and (max-width: 767px) {
+			
+			#about .card{
+				padding: 10px;
+				font-size:1em;
+			}
+			#twitter-feed{
+				height:400px;
+				ovverflow:hidden;
+			}
+			#twitter{
+				width:100%;
+			}
+			#about{
+				width:100%;
+				
+			}
+			#sponsors {
+				width:100%;
+			}
+			}
+
+</style>
+			<!--Page content-->
+			<!---->
+			
+			<div class="column">
+				<div id='slider'>
+					<ul>
+						<li>
+							<div data-image="gallery/img-home/1	.jpg">
+								<!--<div class="caption">
+										Caption of this image
+									</div>-->
+							</div>
+						</li>
+						<li>
+							<div data-image="gallery/img-home/2.jpg">
+							</div>
+						</li>
+						<li>
+							<div data-image="gallery/img-home/3.jpg">
+							</div>
+						</li>
+						<li>
+							<div data-image="gallery/img-home/4.jpg">
+							</div>
+						</li>
+						<li>
+							<div data-image="gallery/img-home/5.jpg">
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row-special">
+				<div class="section2" id="about" >
+					<div class="card">
+						<h1>Code Orange 3476</h1>
+						<p>
+							We are a high-school level robotics team located in Irvine, California.  We participate in a robotics league under an organization called FIRST (For Inspiration and Recognition of Science and Technology).  Since our inception in early 2010, we have participated in the annual robotics challenge designed by FIRST.  We have engaged in many community outreach activities, inspiring thousands of kids towards interest in science, technology, and engineering.  Entering our fourth year as a team, we are proud to be engaged in a growing field that will surely affect the future of the world and eager to encourage others towards the same ends.
+						</p>
+					</div>
+				</div>
+				<div class="section1" id="twitter">
+					<div class="card">
+						<div id="twitter-feed">
+							<a style="width:100%;"id="timeline"class="twitter-timeline" data-link-color=";" data-chrome="nofooter noborders noscrollbar transparent" data-theme="light"  href="https://twitter.com/codeorangefrc" data-widget-id="454803494138953728">
+							</a>
+							<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+							<script>
+	  $(window).load(function() {
+		  if ($(window).width() > 767){
+		  $('#twitter-feed').css('height', $('#about').height()-10);}
+	});
+	</script>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="section-third">
+					<div class="card">
+						<a href="aerial-assist.html">
+						<img src="images/aerial-assist-logo.png" />
+						</a>
+					</div>
+				</div>
+				<div class="section-third">
+					<a href="http://www.usfirst.org/">
+					<div class="card">
+						<img src="images/frc-logo.png" />
+					</div>
+					</a>
+				</div>
+				<div class="section-third" id="sponsors">
+					<a href="sponsors.html">
+					<div class="card">
+						<img id="sponsor-logos" src="sponsor-logos/sponsors.png" >
+					</div>
+					</a>
+				</div>
+			</div>
+			<!-----------------------------------Content above is unique for every page---------------------------------->
+		</div>
+	</div>
+	<script type="text/javascript" src="javascript/footer-and-other-scripts.js"></script>
+	<script type="text/javascript" src="javascript/snaps.js"></script>
+</body>
+</html>

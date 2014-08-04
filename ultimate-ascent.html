@@ -1,0 +1,174 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<title>Ultimate Ascent</title>
+	<meta http-equiv="x-ua-compatible" content="IE=edge" />
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-touch-fullscreen" content="yes">
+	<link rel='icon' type='image/png' href='images/favicon.png'>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script type="text/javascript" src="gallery/slider/slider.js" ></script>
+	<script type="text/javascript" src="javascript/jquery.js"></script>
+	<script type="text/javascript" src="javascript/nicescroll.js"></script>
+	<script type="text/javascript" src="javascript/snap.min.js"></script>
+	<script type="text/javascript" src="javascript/match-height.js"></script>
+</head>
+<body>
+	<!--Actual menu bar(on tablet/phone only) and menu drawer code. If you need to modify the menu itself (add/remove choices), modify the 'menu.js' file under 'javascript' folder.-->
+	<script type="text/javascript" src="javascript/menu-drawer-bar.js"></script>
+	<!---->
+	<div id="content" class="content-pane">
+		<!--Actual header(logo and avatar) and nav bar(on laptop/desktop only). If you need to modify the menu itself (add/remove choices), modify the 'menu.js' file under 'javascript' folder.-->
+		<script type="text/javascript" src="javascript/header-nav-bar.js"></script>
+		<!---->
+		<div class="wrapper">
+			<div style="height:5px">
+			</div>
+			
+			<!---------------------------Content below is unique for every page------------------------------>
+			
+			<!--CSS Styling for this page-->
+			<style>
+			</style>
+			<div class="column-left">
+				<div class="card" >
+					<h1>2013 Game: Ultimate Ascent </h1>
+				</div>
+				<div id='slider'>
+					<ul>
+						<li>
+							<div data-image="gallery/img-ultimate-ascent/13-1.jpg">
+							</div>
+						</li>
+						<li>
+							<div data-image="gallery/img-ultimate-ascent/13-2.jpg">
+							</div>
+						</li>
+						<li>
+							<div data-image="gallery/img-ultimate-ascent/13-3.jpg">
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="card">
+					<h3> Reveal Video </h3>
+					<iframe class="video" src="http://www.youtube.com/embed/itHNW2OFr4Y?iv_load_policy=3&controls=0&showinfo=0" frameborder="0" allowfullscreen="1">
+					</iframe>
+				</div>
+			</div>
+			<div class="column-right" >
+				<div class="card">
+					<h3>Overview</h3>
+					
+					<p>
+					<img style="margin-top:40px;margin-bottom:40px;" src="images/games/13-logo.png"/>
+						In Ultimate Ascent, two alliances consisting of three individual teams (red and blue), compete against each other to score the most points. The goal of the game is to score points by interacting with the field elements and scoring with the game pieces. Points are scored in one of two ways. The first and most common way, will be to successfully shoot or place the game pieces into one of four goals each alliance is allowed to score within. The second way is that robots can attempt to climb up their alliance's pyramid, earning points based on how far they can ascend. At the end of the 2 minute and 15 second match, the alliance who could score faster and climb the highest receives the most points and is declared the winner.
+					</p>
+				</div>
+				<div class="card">
+					<h3>Game Objects</h3>
+					
+					<p>
+					<img style="margin-top:20px;margin-bottom:40px;" class="embed" src="images/games/13-frisbee.png"/>
+						Ultimate Ascent is played using special <i>FIRST</i> discs. The discs are 11 inches in diameter and are made of 180 grams of hard plastic. Each disc has the <i>FIRST</i> logo on the front. Each robot is allowed to hold or control up to four of these discs at any one time.
+					</p>
+				</div>
+			</div>
+			<div class="column-left">
+				<div class="card">
+					<h3>The Field</h3>
+					
+					<p>
+					<img class="embed" src="images/games/13-field.png"/>
+						Ultimate Ascent is played on a 27-foot by 54-foot field. Tape of the appropriate alliance color denotes where each alliance's feeder areas are located and where the game pieces are placed pre-game. Both ends of the field contain a single pyramid, one for each alliance. These pyramids can be climbed for additional points at the end of the match, and have a small goal at their top that the appropriate alliance can score in. Only robots of the correct alliance can climb a pyramid and interact with the robots attempting their own climbs. In addition, at both ends of the arena are four colored goals at three different heights, and each alliance's three feeder stations. The higher the goal is off the ground, the more points it is worth, but also the more difficult attempting to score in it is. At the feeder stations game pieces are entered into the field or into robots. Robots cannot be interfered with while at their alliance's feeder station. Behind the center goals on each side are the alliance stations, where teams operate their robots. In addition, due to the added safety risks of flying game pieces in this year's game, nets will be placed around the perimeter of the field to contain stray game pieces.
+					</p>
+				</div>
+			</div>
+			<div class="column-right" >
+				<div class="card">
+					<h3>Autonomous Period</h3>
+					<p>
+						During the first 15 seconds of the match the drivers are not allowed to control their robots. Instead, teams pre-program their robots to be able to try and preform basic tasks, such as scoring discs, collecting discs from the floor, or simply moving around. If a robot can successfully score in one of the alliance station goals during this time, the points they score are doubled. Attempts to climb the pyramid or score on its goal do not give any points during this time.
+					</p>
+				</div>
+				<div class="card">
+					<h3>Teleoperated Period</h3>
+					<p>
+						After the autonomous period drivers assume control of their robots. Teams are then able to score by shooting or placing the discs into the alliance goals. The lowest goals are worth 1 point per goal, the middle two alliance goals are worth 2 points, the highest alliance goal is worth 3 points, and the pyramid goals are worth 5 points each. At any point in Teleoperated period a team can decide to try and get bonus points by climbing their alliance pyramid. Points are awarded at the end of the match based on how high a robot climbed, as long as the robot managed to stay attached to the pyramid. The pyramid is split into three sections. In order to be considered in a higher section, a robot has to completely leave the section below it. The lowest section is worth 10 points, the middle section worth 20 points, and the highest section worth 30 points. All robots that successfully climbed their tower earn points for their team.
+					</p>
+					</p>
+				</div>
+			</div>
+			<div class="column-left">
+				<div class="card">
+					<h3>Scoring</h3>
+					<p>
+						In Ultimate Ascent the points are calculated during the match, so at the end of the match the total score for each alliance will be displayed. The total includes all of the points scored by the robots, the additional points from climbing their alliance pyramid, and any points from fouls. In Ultimate Ascent fouls give points to the other alliance, the amount varying depending on the severity of the foul. In the end the alliance with the largest point total wins.
+					</p>
+					<table border="1" cellspacing="0" cellpadding="0">
+						<thead>
+							<tr>
+								<td>Frisbee</td>
+								<td>Auto</td>
+								<td>TeleOp</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>Low Goal</th>
+								<td>2</td>
+								<td>1</td>
+							</tr>
+							<tr>
+								<th>Middle Goal</th>
+								<td>4</td>
+								<td>2</td>
+							</tr>
+							<tr>
+								<th>High Goal</th>
+								<td>6</td>
+								<td>3</td>
+							</tr>
+							<tr>
+								<th>Pyramid Goal</th>
+								<td>N/A</td>
+								<td>5</td>
+							</tr>
+						</tbody>
+					</table>
+					<table border="1" cellspacing="0" cellpadding="0">
+						<thead>
+							<tr>
+								<td colspan="2">Hanging</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>Level</th>
+								<th>Points</th>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>10</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>20</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>30</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			
+			<!-----------------------------------Content above is unique for every page---------------------------------->
+		</div>
+	</div>
+	<script type="text/javascript" src="javascript/footer-and-other-scripts.js"></script>
+	<script type="text/javascript" src="javascript/snaps.js"></script>
+</body>
+</html>
