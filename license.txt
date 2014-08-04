@@ -1,11 +1,3 @@
-First Robotics Competition Team Code Orange 3476 Website
-teamcodeorange.com
-
-Using git for file management.
-
-
-Legal Stuff
-
 All trademarks mentioned herein belong to their respective owners.
 
                                  Apache License

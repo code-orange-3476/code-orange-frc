@@ -109,4 +109,4 @@ $('#content').append("
 ");
 */
 //footer compressed version
-$('#content').append("<div id='footer'><div id='footer-content'><span>&copy; Copyright 2011-2014 Code Orange 3476. All rights reserved.</span><span style='float:right;'><a href='about-website.html'>About the Website</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href='contact-us.html'>Contact Us</a></span></div></div>");
+$('#content').append("<div id='footer'><div id='footer-content'><span>&copy;2014 Code Orange 3476, Some rights reserved. Licensed under the <a href='http://www.apache.org/licenses/LICENSE-2.0.html'>Apache License, Version 2.0.</a></span><span style='float:right;'><a href='about-website.html'>About the Website</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href='contact-us.html'>Contact Us</a></span></div></div>");
