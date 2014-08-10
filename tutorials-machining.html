@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en-US">
 <head>
-	<title>Resources</title>
+	<title>Machining</title>
 	<meta http-equiv="x-ua-compatible" content="IE=edge" />
 	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
 	<meta name="apple-mobile-web-app-capable" content="yes">
@@ -23,42 +23,50 @@
 		<script type="text/javascript" src="javascript/header-nav-bar.js"></script>
 		<!---->
 		<div class="wrapper">
-			<div style="height:5px;">
+			<div style="height:5px">
 			</div>
 			<!---------------------------Content below is unique for every page------------------------------>
 			
 			<!--CSS Styling for this page-->
 			<style>
-			.card h3{
-				float:left;
-			}
-			.card img{
-				width:auto;
-				height:auto;
-			}
 			</style>
 			<!--Page content-->
 			<div class="column">
-				<div class="card">
-					<h1>Resources</h1>
-				</div>
-				<div class="card">
-					<h3><a href="calendar.html"><img src="icons/calendar-32.png"/>&nbsp;Calendar</a></h3>
-					<h3><a href="logs.html"><img src="icons/docs-32.png"/> &nbsp;Logs</a></h3>
-					<h3><a href="https://drive.google.com/#folders/0Bz2ZsegxIGloeTRHZi1hLW1DZlE"><img src="icons/drive-32.png"/> &nbsp;Open in Drive App</a></h3>
-					<h3><a href="tutorials-machining.html"><img src="icons/youtube-32.png"/> &nbsp;Machining Tutorials WIP</a></h3>
-				</div>
-				<div class="card" style="background-color:#e3e9ff;background-image:url('tess-white.jpg');">
-					<script>
-					if ($(window).width() > 767){
-						document.write('<iframe src="https://drive.google.com/embeddedfolderview?id=0Bz2ZsegxIGloeTRHZi1hLW1DZlE#list"  height="600"></iframe>')}
-					else {
-						document.write('<iframe src="https://drive.google.com/embeddedfolderview?id=0Bz2ZsegxIGloeTRHZi1hLW1DZlE#grid"  height="400"></iframe>')
-					}
-					</script>
+					<div class="card">
+						<h1>Machining Tutorial</h1>
+					</div>
+					<div class="card">
+						<div id="video-frame" style="width:100%;">
+						</div>
+					</div>
 				</div>
 			</div>
-			
+			<!--Scripts for youtube channel embeds, must be included for tutorial pages. Copy the correct playlist id into the playlist option below to change playlists. 
+			On any youtube channel page, the thing after 'list=' is the id. For
+			'https://www.youtube.com/watch?v=e2GPd8Bm99o&list=PLkS1F9cM-fqBIVntkvQme0nC_xUILWCam',
+			'PLkS1F9cM-fqBIVntkvQme0nC_xUILWCam' is the id. -->
+			<script src="javascript/youtube-playlist-embed/ytv.js" type="text/javascript"></script>
+			<script>
+			window.onload = function(){
+				window.controller = new YTV('video-frame', {
+					user: 'codeorangefrc',
+					accent: '#006666',
+					element: null,
+					playlist: 'PLkS1F9cM-fqA9PQqZZWmi7swZ2-LzDnPK',
+					fullscreen: false,
+					controls: true,
+					annotations: false,
+					autoplay: true,
+					chainVideos: true,
+					browsePlaylists: false,
+					wmode: 'opaque',
+					events: {
+						videoReady: function(){},
+						stateChange: function(){}
+					}
+				});
+			};
+			</script>
 			<!-----------------------------------Content above is unique for every page---------------------------------->
 		</div>
 	</div>
