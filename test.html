@@ -1,375 +1,220 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<title>Code Orange</title>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="IE=edge" />
+	<link rel='icon' type='image/png' href='images/favicon.png'>
+	<!--SEO-->
+	<meta name="description" content="Code Orange 3476 is an award-winning community based FIRST Robotics team located in Irvine, California.">
+	<meta name="keywords" content="Robotics,Team,FIRST,Code,Orange,3476,Irvine">
+	<meta name="author" content="Code Orange Website Subteam">
+	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<!--Android (Chrome) add to home screen-->
+	<meta name="mobile-web-app-capable" content="yes">
+	<link href="icons/icon-196.png" sizes="196x196" rel="icon" >
+	<!--Apple (Safari) add to home screen-->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="Web App">
+	<link href="icons/icon-152.png" sizes="152x152" rel="apple-touch-icon">
+	<link href="icons/icon-144.png" sizes="144x144" rel="apple-touch-icon">
+	<link href="icons/icon-120.png" sizes="120x120" rel="apple-touch-icon">
+	<link href="icons/icon-114.png" sizes="114x114" rel="apple-touch-icon">
+	<link href="icons/icon-76.png" sizes="76x76" rel="apple-touch-icon">
+	<link href="icons/icon-72.png" sizes="72x72" rel="apple-touch-icon">
+	<link href="icons/icon-57.png" sizes="57x57" rel="apple-touch-icon">
+	<link href="icons/startup-image-1536x2008.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+	<link href="icons/startup-image-2048x1496.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+	<link href="icons/startup-image-768x1004.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
+	<link href="icons/startup-image-1024x748.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
+	<link href="icons/startup-image-640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+	<link href="icons/startup-image-640x920.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+	<link href="icons/startup-image-320x460.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
+	<!--includes-->
+	<script type="text/javascript" src="gallery/slider/slider.js" ></script>
+	<script type="text/javascript" src="javascript/jquery.js"></script>
+	<script type="text/javascript" src="javascript/nicescroll.js"></script>
+	<script type="text/javascript" src="javascript/snap.min.js"></script>
+	<script type="text/javascript" src="javascript/match-height.js"></script>
+	<link rel="stylesheet" type="text/css" href="style-test.css" />
+</head>
+<body >
+	<!--Actual menu bar(on tablet/phone only) and menu drawer code. If you need to modify the menu itself (add/remove choices), modify the 'menu.js' file under 'javascript' folder.-->
+	<script type="text/javascript" src="javascript/menu-drawer-bar.js"></script>
+	<!---->
+	<div id="content" class="content-pane">
+		<!--Actual header(logo and avatar) and nav bar(on laptop/desktop only). If you need to modify the menu itself (add/remove choices), modify the 'menu.js' file under 'javascript' folder.-->
+		<script type="text/javascript" src="javascript/header-nav-bar.js"></script>
+		<!---->
+		<div class="wrapper">
+			<div style="height:5px">
+			</div>
+			<!---------------------------Content below is unique for every page------------------------------>
+			
+			<!--CSS Styling for this page-->
+			<style>
+			
+			.section-third img{
+				width:90%;
+				margin:5%;
+			}
+			#twitter .card{
+				min-height:400px;
+			}
+			
+			
+			@media only screen and (min-width: 1224px) {
+				
+			#twitter .card{
+				padding:0 15px 0 15px;
+			}
+			#about .card{
+				padding: 40px;
+				font-size:1.1em;
+			}
+			#twitter {
+				
+				width:45%;
+				height:100%;
+			}
+			#about {
+				width:55%;
+				height:100%;
+			}
+			#twitter-feed{
+				height:474px;
+				ovverflow:hidden;
+			}
+			#sponsors {
+				width:33.33%;
+			}
+			}
+			@media only screen and (max-width: 1223px) {
+			#twitter .card{
+				padding:0 10px 0 10px;
+			}
+			#about .card{
+				padding: 30px;
+				font-size:1.1em;
+			}
+			#twitter {
+				width:45%;
+			}
+			#about {
+				width:55%;
+			}
+			#sponsors {
+				width:33.33%;
+			}
+			}
+			@media only screen and (max-width: 767px) {
+			
+			#about .card{
+				padding: 10px;
+				font-size:1em;
+			}
+			#twitter-feed{
+				height:400px;
+				ovverflow:hidden;
+			}
+			#twitter{
+				width:100%;
+			}
+			#about{
+				width:100%;
+				
+			}
+			#sponsors {
+				width:100%;
+			}
+			}
 
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        
-        
-        
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>jquery.matchHeight Tests</title>
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-        <script type="text/javascript" src="javascript/match-height.js"></script>
-        
-		<style>
-
-* { 
-    padding: 0; 
-    margin: 0; 
-}
-
-body { 
-    background: #033649;
-    font-family: Georgia, Times, "Times New Roman", serif;
-    color: #fff;
-    border: 9px solid #fff;
-}
-
-h1 {
-    color: #fff;
-    display: block;
-    margin: 0 0 1em 0;
-    font-weight: normal;
-    font-size: 30px;
-}
-
-h2 {
-    color: #ddd;
-    display: block;
-    margin: 0 0 1em 0;
-    font-weight: normal;
-    font-size: 24px;
-}
-
-p, ul li {
-    margin: 0 0 1em 0;
-    color: #bebebe;
-    font-size: 12px;
-}
-
-ul {
-    list-style: square;
-}
-
-.nav {
-    margin: 0 0 2em 0;
-    font-size: 16px;
-}
-
-a, a:link, a:visited, a:active, a:hover {
-    color: #ccc;
-    text-decoration: none;
-    border-bottom: 1px solid #555;
-    padding: 0 0 2px 0;
-}
-
-.container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 60px 20px;
-}
-
-.nav-sep {
-    padding: 0 5px;
-}
-
-.controls {
-    overflow: hidden;
-    margin: 60px 0 30px 0;
-}
-
-.controls .checkbox {
-    float: left;
-    font-size: 13px;
-    color: #ddd;
-    margin: 5px 20px 5px 0;
-}
-
-.test-remove {
-    margin: -8px 20px 0 20px;
-    line-height: 1;
-    border: 0;
-    background: #ddd;
-    color: #555;
-    padding: 7px 10px;
-}
-
-/* test items */
-
-.items-container,
-.data-test-items {
-    overflow: hidden;
-    margin: 0 -1%;
-}
-
-.item {
-    display: block;
-    float: left;
-    width: 23%;
-    background: #00A0B0;
-}
-
-.item p {
-    color: rgba(255,255,255,0.6);
-    line-height: 1.5;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-}
-
-.item h2,
-.item h3,
-.item h4 {
-    color: #fff;
-    margin: 0 0 1em 0;
-    font-weight: normal;
-}
-
-.item h2 {
-    font-size: 24px;
-}
-
-.item h3 {
-    font-size: 20px;
-}
-
-.item h4 {
-    font-size: 16px;
-}
-
-.item-0 { background: #00A0B0; border-color: #008795 !important; }
-.item-1 { background: #6A4A3C; border-color: #52392e !important; }
-.item-2 { background: #CC333F; border-color: #ad2b35 !important; }
-.item-3 { background: #EB6841; border-color: #ca5938 !important; }
-.item-4 { background: #EDC951; border-color: #d8b74a !important; }
-.item-5 { background: #00A0B0; border-color: #008795 !important; }
-.item-6 { background: #6A4A3C; border-color: #52392e !important; }
-.item-7 { background: #CC333F; border-color: #ad2b35 !important; }
-.item-8 { background: #EB6841; border-color: #ca5938 !important; }
-.item-9 { background: #EDC951; border-color: #d8b74a !important; }
-.item-10 { background: #00A0B0; border-color: #008795 !important; }
-.item-11 { background: #6A4A3C; border-color: #52392e !important; }
-
-.item img {
-    display: block;
-    max-width: 100%;
-}
-
-.item p:last-child {
-    margin-bottom: 0;
-}
-
-.items-container.big-items .item {
-    width: 48%;
-}
-
-/* test margins */
-
-.test-margin .item {
-    margin: 1%;
-}
-
-/* test a mix of padding amounts */
-
-.test-padding .item {
-    padding: 20px;
-}
-
-.test-padding .item-5 {
-    padding: 30px;
-}
-
-.test-padding .item-6 {
-    padding: 40px;
-}
-
-.test-padding .item-7 {
-    padding: 50px;
-}
-
-/* test a mix of border widths */
-
-.test-border .item {
-    border: 1px solid #eee;
-}
-
-.test-border .item-2 {
-    border: 3px solid #eee;
-}
-
-.test-border .item-3 {
-    border: 6px solid #eee;
-}
-
-.test-border .item-5 {
-    border: 8px solid #eee;
-}
-
-.test-border .item-8 {
-    border: 10px solid #eee;
-}
-
-/* test border-box */
-
-.test-border-box .item {
-    -moz-box-sizing: border-box; 
-    -webkit-box-sizing: border-box; 
-    box-sizing: border-box;
-}
-
-/* test fixed height items */
-
-.items-container.fixed-items .item-0 {
-    height: 150px;
-}
-
-.items-container.fixed-items .item-1 {
-    height: 190px;
-}
-
-.items-container.fixed-items .item-2 {
-    height: 230px;
-}
-
-.items-container.fixed-items .item-3 {
-    height: 250px;
-}
-
-/* test responsive */
-
-@media only screen and (max-width: 1024px) {
-    .item,
-    .items-container.big-items .item {
-        width: 48%;
-    }
-}
-
-@media only screen and (max-width: 640px) {
-    .test-margin .item,
-    .test-margin .items-container.big-items .item {
-        width: 99%;
-        margin-left: 0;
-        margin-right: 0;
-    }
-}
-		</style>
-    </head>
-    <body class="test-match-height test-rows test-responsive test-border-box test-margin test-padding">
-        <div class="container">
-            <div class="items-container">
-                <div class="item item-0">
-                    <h2>Lorem ipsum</h2>
-                    <p>Phasellus ut nibh fermentum, vulputate urna vel, semper diam.</p>
-                    <p>Aenean semper felis ipsum, vulputate consequat dui elementum vel.</p>
-                </div>
-                <div class="item item-1">
-                    <h3>Lorem ipsum dolor</h3>
-                    <p>Phasellus ut nibh fermentum, vulputate urna vel, semper diam. Nunc sollicitudin felis ut pellentesque fermentum. In erat mi, pulvinar sit amet tincidunt vitae, gravida id felis. Phasellus hendrerit erat sed porta imperdiet. Vivamus viverra ipsum tortor, et congue mauris porttitor ut.</p>
-                </div>
-                <div class="item item-2">
-                    <h4>Lorem ipsum dolor sit amet.</h4>
-                    <p>Aenean semper felis ipsum, vulputate consequat dui elementum vel. Nullam odio eros, sagittis vitae lectus id, pretium viverra lectus. Etiam auctor dolor non dui ultricies pulvinar.</p>
-                </div>
-
-                <div class="item item-3">
-                    <h3>Lorem ipsum dolor</h3>
-                    <p>Aenean semper.</p>
-                </div>
-                <div class="item item-4">
-                    <h3>Lorem ipsum dolor</h3>
-                    <p>Phasellus ut nibh fermentum, vulputate urna vel, semper diam. Nunc sollicitudin felis ut pellentesque fermentum. In erat mi, pulvinar sit amet tincidunt vitae, gravida id felis.</p>
-                </div>
-                <div class="item item-5">
-                    <h3>Lorem ipsum dolor</h3>
-                    <p>Aenean semper felis ipsum, vulputate consequat dui elementum vel.</p>
-                </div>
-                <div class="item item-6">
-                    <h3>Lorem ipsum dolor</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                </div>
-                <div class="item item-7">
-                    <h3>Lorem ipsum dolor</h3>
-                    <p>Phasellus ut nibh fermentum, vulputate urna vel, semper diam.</p>
-                </div>
-
-                <div class="item item-8">
-                    <img src="http://placehold.it/800x150/fafafa/666" alt="a test image">
-                </div>
-                <div class="item item-9">
-                    <img src="http://placehold.it/800x180/fafafa/666" alt="a test image">
-                </div>
-                <div class="item item-10">
-                    <img src="http://placehold.it/800x200/fafafa/666" alt="a test image">
-                </div>
-                <div class="item item-11">
-                    <img src="http://placehold.it/800x220/fafafa/666" alt="a test image">
-                </div>
-            </div>
-
-            <div class="items-container big-items">
-                <div class="item item-0">
-                    <h3>Lorem ipsum dolor</h3>
-                    <p>Phasellus ut nibh fermentum, vulputate urna vel, semper diam.</p>
-                    <p>Aenean semper felis ipsum, vulputate consequat dui elementum vel.</p>
-                    <p>Phasellus ut nibh fermentum, vulputate urna vel, semper diam. Nunc sollicitudin felis ut pellentesque fermentum. In erat mi, pulvinar sit amet tincidunt vitae, gravida id felis. Phasellus hendrerit erat sed porta imperdiet. Vivamus viverra ipsum tortor, et congue mauris porttitor ut.</p>
-                    <p>Phasellus ut nibh fermentum, vulputate urna vel, semper diam. Nunc sollicitudin felis ut pellentesque fermentum. In erat mi, pulvinar sit amet tincidunt vitae, gravida id felis.</p>
-                </div>
-                <div class="item item-1">
-                    <div class="items-container">
-                        <div class="item item-2">
-                            <p>Aenean</p>
-                        </div>
-                        <div class="item item-3">
-                            <p>Lorem</p>
-                        </div>
-                        <div class="item item-4">
-                            <p>Phasellus</p>
-                        </div>
-                        <div class="item item-5">
-                            <p>Aenean semper felis ipsum, vulputate consequat dui elementum vel.</p>
-                        </div>
-                        <div class="item item-6">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                        </div>
-                        <div class="item item-7">
-                            <p>Phasellus ut nibh fermentum, vulputate urna vel, semper diam.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="data-test-items">
-                <div class="item item-0" data-match-height="items-a">
-                    <h3>data-match-height="items-a"</h3>
-                    <p>Phasellus ut nibh fermentum, vulputate urna vel, semper diam. Nunc sollicitudin felis ut pellentesque fermentum. In erat mi, pulvinar sit amet tincidunt vitae, gravida id felis. Phasellus hendrerit erat sed porta imperdiet. Vivamus viverra ipsum tortor, et congue mauris porttitor ut.</p>
-                </div>
-                <div class="item item-1" data-match-height="items-a">
-                    <h3>data-match-height="items-a"</h3>
-                    <p>Phasellus ut nibh fermentum, vulputate urna vel, semper diam. Nunc sollicitudin felis ut pellentesque fermentum. In erat mi, pulvinar sit amet tincidunt vitae, gravida id felis.</p>
-                </div>
-                <div class="item item-2" data-mh="items-b">
-                    <h3>data-mh="items-b"</h3>
-                    <p>In erat mi, pulvinar sit amet tincidunt vitae, gravida id felis.</p>
-                </div>
-                <div class="item item-3" data-mh="items-b">
-                    <h3>data-mh="items-b"</h3>
-                    <p>Nunc sollicitudin felis ut pellentesque fermentum. In erat mi, pulvinar sit amet tincidunt vitae, gravida id felis.</p>
-                </div>
-            </div>
-
-            <div class="items-container fixed-items">
-                <div class="item item-0">
-                    <p>Fixed height</p>
-                </div>
-                <div class="item item-1">
-                    <p>Fixed height</p>
-                </div>
-                <div class="item item-2">
-                    <p>Fixed height</p>
-                </div>
-                <div class="item item-3">
-                    <p>Fixed height</p>
-                </div>
-            </div>
-        </div>
-    </body>
+</style>
+			<!--Page content-->
+			<!---->
+			
+			<div class="column">
+				<div id='slider'>
+					<ul>
+						<li>
+							<div data-image="gallery/img-home/1	.jpg">
+								<!--<div class="caption">
+										Caption of this image
+									</div>-->
+							</div>
+						</li>
+						<li>
+							<div data-image="gallery/img-home/2.jpg">
+							</div>
+						</li>
+						<li>
+							<div data-image="gallery/img-home/3.jpg">
+							</div>
+						</li>
+						<li>
+							<div data-image="gallery/img-home/4.jpg">
+							</div>
+						</li>
+						<li>
+							<div data-image="gallery/img-home/5.jpg">
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row-special">
+				<div class="section2" id="about" >
+					<div class="card">
+						<h1>Code Orange 3476</h1>
+						<p>
+							We are a high-school level robotics team located in Irvine, California.  We participate in a robotics league under an organization called FIRST (For Inspiration and Recognition of Science and Technology).  Since our inception in early 2010, we have participated in the annual robotics challenge designed by FIRST.  We have engaged in many community outreach activities, inspiring thousands of kids towards interest in science, technology, and engineering.  Entering our fourth year as a team, we are proud to be engaged in a growing field that will surely affect the future of the world and eager to encourage others towards the same ends.
+						</p>
+					</div>
+				</div>
+				<div class="section1" id="twitter">
+					<div class="card">
+						<div id="twitter-feed">
+							<a style="width:100%;"id="timeline"class="twitter-timeline" data-link-color=";" data-chrome="nofooter noborders noscrollbar transparent" data-theme="light"  href="https://twitter.com/codeorangefrc" data-widget-id="454803494138953728">
+							</a>
+							<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+							<script>
+	  $(window).load(function() {
+		  if ($(window).width() > 767){
+		  $('#twitter-feed').css('height', $('#about').height()-10);}
+	});
+	</script>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="section-third">
+					<div class="card">
+						<a href="aerial-assist.html">
+						<img src="images/aerial-assist-logo.png" />
+						</a>
+					</div>
+				</div>
+				<div class="section-third">
+					<a href="http://www.usfirst.org/">
+					<div class="card">
+						<img src="images/frc-logo.png" />
+					</div>
+					</a>
+				</div>
+				<div class="section-third" id="sponsors">
+					<a href="sponsors.html">
+					<div class="card">
+						<img id="sponsor-logos" src="sponsor-logos/sponsors.png" >
+					</div>
+					</a>
+				</div>
+			</div>
+			<!-----------------------------------Content above is unique for every page---------------------------------->
+		</div>
+	</div>
+	<script type="text/javascript" src="javascript/footer-and-other-scripts.js"></script>
+	<script type="text/javascript" src="javascript/snaps.js"></script>
+</body>
 </html>

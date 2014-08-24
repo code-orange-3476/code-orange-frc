@@ -7,10 +7,10 @@ function getAndroidVersion(ua) {
 };
 
 
-if (is_android && parseFloat(getAndroidVersion()) < 4.4){
+/*if (is_android && parseFloat(getAndroidVersion()) < 4.4){
 	$('#title-bar').css('height', 'auto').html('<span>Code Orange 3476</span><br><p>Hi, unfortunately it looks like the browser you are using is a bit old :(<br><br>Please try switching to either of the following browsers for this site to function correctly: <ul><li><p style="padding:0;margin:0;"><a href="https://play.google.com/store/apps/details?id=com.android.chrome&hl=en"> Chrome</a> (a newer version of this same browser) </p></li><li><p style="padding:0;margin:0;"> <a href="https://play.google.com/store/apps/details?id=org.mozilla.firefox&hl=en">Firefox</a> (a great alternative for older phones)</p></li> </ul><p> Thanks!</p>');
 }
-else {
+else*/ {
 	var snapper = new Snap({
 		element: document.getElementById('content'),
 		disable: 'left',
