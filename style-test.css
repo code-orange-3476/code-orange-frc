@@ -3,7 +3,6 @@
  font-family: 'candara';
  padding:0px;
  margin:0px;
- overflow-y: scroll; /* has to be scroll, not auto */
  -webkit-overflow-scrolling: touch;
 }
 
@@ -895,7 +894,7 @@ td {
 }
 
 #menu-drawer {
-	width: 0px;
+	overflow-y:scroll;
 	background-image: url(tess-dark.jpg);
 	background-color: #004d40;
 	background-attachment: fixed;
@@ -932,12 +931,9 @@ td {
 	margin: 30px 0px 90px 45px;
 }
 
-#menu-drawer h4 {
-}
-
 #menu-drawer ul {
 	padding: 0;
-	margin-left: 30px;
+	margin-left: 20px;
 	list-style-type: none;
 	margin-bottom: 0;
 }

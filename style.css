@@ -4,7 +4,6 @@
  padding:0px;
  margin:0px;
  overflow:scroll;
- overflow-y: scroll; /* has to be scroll, not auto */
   -webkit-overflow-scrolling: touch;
 }
 
